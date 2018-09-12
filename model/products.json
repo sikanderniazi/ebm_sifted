@@ -1,0 +1,121 @@
+{
+	"Header": [{
+
+			"gs_Name": "Supervisor Name",
+			"Monitoring freq": "Once a Shift"
+		},
+		{
+			"gs_Name": "Workers Hygiene/PPE'S",
+			"Monitoring freq": "Four Times/shift"
+		},
+		{
+			"gs_Name": "Area Hygiene/cleaning condition",
+			"Monitoring freq": "Four Times/shift"
+		},
+		{
+
+			"gs_Name": "Weighting scale verification",
+			"Monitoring freq": "Four Times/shift"
+		},
+		{
+			"gs_Name": "Raw suger bag condition",
+			"Monitoring freq": "Four Times/shift"
+		},
+		{
+			"gs_Name": "Inspection of grinders sieve",
+			"Monitoring freq": "Twice a Shift"
+		},
+
+		{
+			"gs_Name": "Inspection of grinders pins ",
+			"Monitoring freq": "Twice a Shift"
+
+		},
+		{
+			"gs_Name": "Inspection of grinderspit area",
+			"Monitoring freq": "Twice a Shift"
+		},
+
+		{
+
+			"gs_Name": "Inspection of Manual sugar sieve(use of Jam Delight only)",
+			"Monitoring freq": "Four Times/Shift"
+
+
+
+		}
+	],
+
+
+
+	"detail": [{
+
+			"fs_Name": "Supervisor Name",
+			"Monitoring freq2": "Once a Shift"
+		},
+		{
+
+			"fs_Name": "Workers Hygiene/PPE'S",
+			"Monitoring freq2": "Four Times/shift"
+		},
+
+		{
+			"fs_Name": "Area Hygiene/cleaning condition",
+			"Monitoring freq2": "Four Times/shift"
+
+		},
+		{
+		
+			"fs_Name": "Siftes and Unsifted flour bag condition",
+			"Monitoring freq2": "Four Times/shift"
+
+		},
+		{
+		
+			"fs_Name": "Inspection of pit Area",
+			"Monitoring freq2": "Twice a shift"
+
+		},
+		{
+			
+			"fs_Name": "Sifter#3 Cleaning and sieves inspection",
+			"Monitoring freq2": "Twice a Week"
+		},
+		{
+			
+			"fs_Name": "Magnet Inspecction and cleaning",
+			"Monitoring freq2": "Twice a Weak"
+		},
+		{
+		
+			"fs_Name": "Sifter#2 Cleaning and sieves inspection(when operational)",
+			"Monitoring freq2": "Once a shift"
+		},
+		{
+		
+		
+			"fs_Name": "Sifter#2 frames inspection (when operational)",
+			"Monitoring freq2": "Once a shift"
+
+
+		},
+		{
+		
+		
+			"fs_Name": "Elevator/cargo lift training",
+			"Monitoring freq2": "Four Times/shift"
+
+
+		},
+
+		{
+			"fs_Name": "Air cutterinsectocutor working and cleaning",
+			"Monitoring freq2": "Four Times/shift"
+		},
+
+		{
+			"fs_Name": "Silo skirt area cleaningand cartridge/filter inspection",
+			"Monitoring freq2": "Four Times/shift"
+		}
+	]
+}

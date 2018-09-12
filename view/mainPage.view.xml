@@ -1,0 +1,136 @@
+<mvc:View controllerName="com.tallymarks.z_fiori_test.view.mainPage" 
+	xmlns="sap.ui.table" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:u="sap.ui.unified" 
+	xmlns:c="sap.ui.core" 
+	xmlns:l="sap.ui.commons.layout" 
+	xmlns:f="sap.ui.layout.form" 
+	xmlns:m="sap.m">
+	<m:Page title="Sifted Flour and Sugar Inspection Chart" showHeader="true" ariaLabelledBy="title" class="sapUiContentPadding">
+
+
+		<m:content>
+
+			<f:SimpleForm id="SimpleFormDisplayColumn_oneGroup234" 
+			editable="false" layout="ColumnLayout" columnsM="2" columnsL="3" columnsXL="4">
+				<f:content>
+					<m:Label text="Date" />
+					<m:DatePicker id="DatePickerID" displayFormatType="" change="handleChange" placeholder="Enter Date" />
+					<m:Label text="Shift" />
+					<m:Input />
+				</f:content>
+			</f:SimpleForm>
+
+			<m:IconTabBar id="idIconTabBarNoIcons" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+				<m:items>
+					<m:IconTabFilter text="Ground Sugar Inspection">
+
+						<m:Table id="idProductsTable" inset="false" items="{/Header}">
+
+							<m:columns>
+
+								<m:Column hAlign="Left">
+									<m:header>
+										<m:Label text="Observation" design="Bold" width="100%"/>
+									</m:header>
+								</m:Column>
+
+								<m:Column hAlign="Left" demandPopin="true" minScreenWidth="Medium">
+									<m:header>
+										<m:Label text="Monitoring Frequency" design="Bold" width="100%"/>
+									</m:header>
+								</m:Column>
+
+								<m:Column hAlign="Left" demandPopin="true" minScreenWidth="Medium">
+									<m:header>
+										<m:Label text="Time" design="Bold" width="100%"/>
+									</m:header>
+								</m:Column>
+
+								<m:Column hAlign="Left" demandPopin="true" minScreenWidth="Medium">
+									<m:header>
+										<m:Label text="Remarks" design="Bold" width="100%"/>
+									</m:header>
+								</m:Column>
+
+							</m:columns>
+							<m:items>
+
+
+								<m:ColumnListItem>
+									<m:cells>
+										<m:Text text="{gs_Name}" />
+										<m:Text text="{Monitoring freq}" />
+										<m:TimePicker id="T2" valueFormat="hh:mm a" displayFormat="hh:mm a" change="handleChange" placeholder="Enter Shift Time"/>
+									</m:cells>
+									<m:Input value="" />
+								</m:ColumnListItem>
+							</m:items>
+						</m:Table>
+
+					</m:IconTabFilter>
+
+
+
+					<!-- ======================================== Shifted Flour Inspection ===================================================================== -->
+
+					<m:IconTabFilter text="Shifted Flour Inspection">
+
+						<m:Table id="iidProductsTable" inset="false" items="{/detail}">
+
+							<m:columns>
+
+								<m:Column hAlign="Left">
+									<m:header>
+										<m:Label text="Observation" design="Bold" width="100%"/>
+									</m:header>
+								</m:Column>
+
+								<m:Column hAlign="Left" demandPopin="true" minScreenWidth="Medium">
+									<m:header>
+										<m:Label text="Monitoring Frequency" design="Bold" width="100%"/>
+									</m:header>
+								</m:Column>
+
+								<m:Column hAlign="Left" demandPopin="true" minScreenWidth="Medium">
+									<m:header>
+										<m:Label text="Time" design="Bold" width="100%"/>
+									</m:header>
+								</m:Column>
+
+								<m:Column hAlign="Left" demandPopin="true" minScreenWidth="Medium">
+									<m:header>
+										<m:Label text="Remarks" design="Bold" width="100%"/>
+									</m:header>
+								</m:Column>
+
+							</m:columns>
+							<m:items>
+
+
+								<m:ColumnListItem>
+									<m:cells>
+										<m:Text text="{fs_Name}" />
+										<m:Text text="{Monitoring freq2}" />
+										<m:TimePicker id="T3" valueFormat="hh:mm a" displayFormat="hh:mm a" change="handleChange" placeholder="Enter Shift Time"/>
+									</m:cells>
+									<m:Input value="" />
+								</m:ColumnListItem>
+							</m:items>
+						</m:Table>
+
+					</m:IconTabFilter>
+
+				</m:items>
+			</m:IconTabBar>
+
+
+
+
+			<!-- ================================================================ -->
+
+
+		</m:content>
+
+	</m:Page>
+</mvc:View>
